@@ -1,0 +1,8 @@
+baseURL = 'https://tastejapan.github.io/'
+languageCode = 'en-us'
+title = 'Taste Japan'
+theme = 'PaperMod'
+publishDir = 'docs'  # 关键！用 GitHub Pages 的docs方式部署
+
+[params]
+  ShowReadingTime = true
