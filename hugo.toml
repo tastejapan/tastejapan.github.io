@@ -1,8 +1,45 @@
 baseURL = 'https://tastejapan.github.io/'
-languageCode = 'en-us'
-title = 'Taste Japan'
+defaultContentLanguage = 'en'
 theme = 'PaperMod'
-publishDir = 'docs'  # 关键！用 GitHub Pages 的docs方式部署
+publishDir = 'docs'
+
+[languages]
+
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    contentDir = 'content/en'
+    title = 'Taste Japan'
+
+  [languages.zh-cn]
+    languageName = '简体中文'
+    weight = 2
+    contentDir = 'content/zh-cn'
+    title = '日本美食攻略'
+
+  [languages.zh-hk]
+    languageName = '繁體中文'
+    weight = 3
+    contentDir = 'content/zh-hk'
+    title = '日本美食指南'
+
+  [languages.ja]
+    languageName = '日本語'
+    weight = 4
+    contentDir = 'content/ja'
+    title = '日本グルメ'
+
+  [languages.ko]
+    languageName = '한국어'
+    weight = 5
+    contentDir = 'content/ko'
+    title = '일본 맛집 가이드'
 
 [params]
   ShowReadingTime = true
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
